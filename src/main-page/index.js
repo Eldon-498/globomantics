@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import FeaturedHouse from './featured-house';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { useEffect, useState, useMemo } from 'react';
 import './main-page.css';
@@ -33,7 +34,7 @@ function App() {
     </div>
     <Switch>
       <Route path="/">
-
+        <FeaturedHouse house={featuredHouse}/>
       </Route>
     </Switch>
 

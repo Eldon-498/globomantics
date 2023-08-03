@@ -1,4 +1,6 @@
-const featuredHouse = ({ house }) => {
+import House from "../house";
+
+const FeaturedHouse = ({ house }) => {
     if(house)
     return (  
         <div>
@@ -15,4 +17,4 @@ const featuredHouse = ({ house }) => {
     )
 }
  
-export default featuredHouse;
+export default FeaturedHouse;
