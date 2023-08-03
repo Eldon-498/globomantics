@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './main-page.css';
 import Header from './header';
 
 function App() {
   return (
     <div className='container'>
-      <Header />
+      <Header title="Providing houses all over the world"/>
     </div>
   );
 }
