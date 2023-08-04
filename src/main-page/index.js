@@ -5,6 +5,7 @@ import { useEffect, useState, useMemo } from 'react';
 import './main-page.css';
 import Header from './header';
 import House from '../house';
+import SearchResults from '../search-results';
 
 function App() {
 
@@ -35,6 +36,9 @@ function App() {
       <House />
     </div>
     <Switch>
+      <Route path="/searchresults/:country">
+        <SearchResults allHouses={allHouses} />
+      </Route>
       <Route path="/">
         <FeaturedHouse house={featuredHouse}/>
       </Route>
