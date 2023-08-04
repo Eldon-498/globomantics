@@ -1,10 +1,10 @@
-import { useNavigation }from 'react-router-dom'
+import { useHistory }from 'react-router-dom';
 
 const HouseFilter = ( {allHouses}) => {
     const countires = allHouses
     ? Array.from(new Set(allHouses.map((h)=> h.country))) : [];
     countires.unshift(null);
-    const history = useNavigation();
+    const history = useHistory();
 
     const onSearchChange = (e) => {
         const country = e.target.value;

@@ -6,6 +6,7 @@ import './main-page.css';
 import Header from './header';
 import House from '../house';
 import SearchResults from '../search-results';
+import HouseFilter from './house-filter';
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
     <Router>
     <div className="'container'">
       <Header subtitle="Providing houses all over the world"/>
-      <House />
+      <HouseFilter />
     </div>
     <Switch>
       <Route path="/searchresults/:country">
