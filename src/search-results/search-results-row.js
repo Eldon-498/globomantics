@@ -1,7 +1,6 @@
 const SearchResultsRow = ( {house} ) => {
-    const setActive = () => {
-
-    }
+    const setActive = () => {}
+    
     return (  
         <tr onClick={setActive}>
             <td>{house.address}</td>

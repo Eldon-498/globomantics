@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { useEffect, useState, useMemo } from 'react';
 import './main-page.css';
 import Header from './header';
-import House from '../house';
 import SearchResults from '../search-results';
 import HouseFilter from './house-filter';
 
@@ -34,13 +33,13 @@ function App() {
     <Router>
     <div className="'container'">
       <Header subtitle="Providing houses all over the world"/>
-      <HouseFilter />
+      <HouseFilter allHouses={allHouses} />
     </div>
     <Switch>
       <Route path="/searchresults/:country">
         <SearchResults allHouses={allHouses} />
       </Route>
-      <Route path="/">
+      <Route  path="/">
         <FeaturedHouse house={featuredHouse}/>
       </Route>
     </Switch>
